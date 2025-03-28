@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is a simple web page for practising html forms and media elements">
+    <link rel="stylesheet" href="index.css">
+    <title>Forms, lists and media elements</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>Forms, Lists, Media and Tables</h1>
+    </div>
+    <!--This is the heading-->
+    
+
+    <!--This is an ordered list of items uisng roman numerals-->
+    <div class="list">
+        <h2>This is an ordered list using roman numerals:</h2>
+        <ol type="I">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+            <li>Forth item</li>
+            <li>Fifth item</li>
+        </ol>
+    </div>
+    
+
+    <!--An image from pexels.com-->
+    <div class="firstImage">
+        <img src="data/picture1.jpg" alt="picture of a cup of coffee and easter decorations">
+
+    </div>
+    
+    <!--This is a table of some people's personal details-->
+    <table>
+        <tr>
+            <!--th means the table heads-->
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Enock</td>
+            <td>Kakamega</td>
+            <td>1234556</td>
+            <td>mainaenock10@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Maina</td>
+            <td>Nyeri</td>
+            <td>1279377</td>
+            <td>mainaenock1000@gmail.com</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Kisumu</td>
+            <td>1674556</td>
+            <td>johndoe2030@gmail.com</td>
+        </tr>
+    </table>
+
+    <!--This form collects all the data using different forms of data input-->
+    <form action="">
+        <div class="personal">
+            <fieldset>
+                <legend> <strong>Personal Information:</strong></legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your first and second name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <label for="dateOfBirth">Date of Birth:</label>
+                <input type="date" id="dateOfBirth" name="dateOfBirth">
+                <fieldset>
+                    <!--the user can only chose one option -->
+                    <legend>Gender:</legend>
+                    <label for="male">Male:</label>
+                    <input type="radio" name="gender" id="male" value="Male">
+                    <label for="female">Female:</label>
+                    <input type="radio" name="gender" id="female" value="Female">
+                    <label for="other">Other:</label>
+                    <input type="radio" name="gender" id="other" value="other">
+                </fieldset>
+        </div>
+        
+            
+        </fieldset>
+
+        <label id="siblings" for="siblings">How many siblings do you have:</label>
+        <select name="siblings" id="siblings">
+            <option value="1" label="1"></option>
+            <option value="2" label="2"></option>
+            <option value="3" label="3"></option>
+            <option value="4" label="4"></option>
+            <option value="5" label="5"></option>
+            <option value="6" label="6"></option>
+        </select>
+        <br>
+
+        <fieldset>
+            <!-- The user can chose multiple options -->
+
+            <legend>Which language(s) do you speak?</legend>
+            <label for="english">English </label>
+            <input value="swahili" type="checkbox" name="english" id="english">
+            <br>
+            <label for="swahili">Swahili </label>
+            <input value="swahili" type="checkbox" name="swahili" id="swahili">
+            <br>
+            <label for="vernacular">Vernacular </label>
+            <input value="swahili" type="checkbox" name="vernacular" id="vernacular">
+
+        </fieldset>
+        
+    </form>
+</body>
+</html>
